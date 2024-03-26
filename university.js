@@ -109,7 +109,7 @@ class Department {
         } return student
     }
     getProfessors() {
-        let professor = "";
+        //let professor = "";
         for (let i = 0; i < this.professors.length; i++) {
             professor += this.professors[i].name + ", "
 
@@ -151,7 +151,7 @@ class Course {
         return this.professor
     }
     toString() {
-        return `Course: ${this.code} - ${this.title},\n\tProfessor: ${this.getProfessor()},\n\tStudent: ${this.getStudents()}\n`
+        //return `Course: ${this.code} - ${this.title},\n\tProfessor: ${this.getProfessor()},\n\tStudent: ${this.getStudents()}\n`
     }
 }
 //----------PerSon
@@ -189,7 +189,7 @@ class Student extends Person {
         }
     }
     getCourses() {
-        let course = "";
+        //let course = "";
         for (let i = 0; i < this.courses.length; i++) {
             course += this.courses[i].title + ", "
 
@@ -221,7 +221,7 @@ class Professor extends Person {
         for (let i = 0; i < this.courses.length; i++) {
             course += this.courses[i].title + ", "
 
-        } return course
+        } //return course
     }
     toString() {
         return `Professor: ${this.name}, Staff ID: ${this.staffId},\n\tCourses: ${this.getCourses()}\n`
